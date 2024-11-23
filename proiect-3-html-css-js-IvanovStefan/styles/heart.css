@@ -1,0 +1,40 @@
+.result-container-with-heart {
+    display: flex;
+    align-items: center;
+  }
+
+.fa-heart {
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .fa-regular {
+    color: red;
+  }
+
+
+
+  #storedWordsSection {
+    text-align: center;
+  }
+
+  #storedWordsList {
+    list-style: none;
+    font-weight: bold;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #storedWordsList li {
+    margin: 10px;
+    color: #f3f5f6;
+  }
+
+  .word-container {
+    background-color: rgb(208, 12, 12);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }

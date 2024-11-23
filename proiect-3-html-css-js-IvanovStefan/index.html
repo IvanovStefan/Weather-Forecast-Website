@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherCOM</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/heart.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&family=Lily+Script+One&family=Montserrat:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="storedWordsSection">
+      <h2>Favourites</h2>
+      <ul id="storedWordsList"></ul>
+    </div>
+    <div class="title">ENTER a place to see the weather</div>
+    <div class="autocomplete-container" id="autocomplete-container"></div>
+
+    <script src="scripts/autocomplete.js"></script>
+    <div class="result-container-with-heart">
+      <div class="result-container" id="result-container">Bucharest</div>
+      <i class="fa-heart fa-solid" id="heartIcon"></i>
+    </div>
+
+    <div class="today" id="wth">
+      <div class="today1">
+        <img class="weather-icon large" src="assets/mist.png" />
+        <div class="current-temp">Temperatura actuala: 20&deg;C</div>
+      </div>
+      <div class="today2">
+        <div class="info">
+          <div class="tag">HIGH</div>
+          <div class="high">30&deg;C</div>
+        </div>
+        <div class="info">
+          <div class="tag">HUMIDITY</div>
+          <div class="humid">50%</div>
+        </div>
+        <div class="info">
+          <div class="tag">WIND SPEED</div>
+          <div class="wind">10km/h</div>
+        </div>
+        <div class="info">
+          <div class="tag">LOW</div>
+          <div class="low">20&deg;C</div>
+        </div>
+        <div class="info">
+          <div class="tag">PRESSURE</div>
+          <div class="press">1024hPa</div>
+        </div>
+        <div class="info">
+          <div class="tag">RAIN CHANCE</div>
+          <div class="precip">20%</div>
+        </div>
+      </div>
+    </div>
+    <table class="nextdays" id="wth1">
+      <tr class="daily">
+        <td>
+          <div class="weekday1">Monday</div>
+        </td>
+        <td>
+          <img class="weather-icon1" src="assets/mist.png" />
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">HIGH</div>
+            <div class="max1">30&deg;C</div>
+          </div>
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">LOW</div>
+            <div class="min1">20&deg;C</div>
+          </div>
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">HUMIDITY</div>
+            <div class="humid1">50%</div>
+          </div>
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">RAIN CHANCE</div>
+            <div class="rain1">20%</div>
+          </div>
+        </td>
+      </tr>
+      <tr class="daily">
+        <td>
+          <div class="weekday2">Monday</div>
+        </td>
+        <td>
+          <img class="weather-icon2" src="assets/mist.png" />
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">HIGH</div>
+            <div class="max2">30&deg;C</div>
+          </div>
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">LOW</div>
+            <div class="min2">20&deg;C</div>
+          </div>
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">HUMIDITY</div>
+            <div class="humid2">50%</div>
+          </div>
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">RAIN CHANCE</div>
+            <div class="rain2">20%</div>
+          </div>
+        </td>
+      </tr>
+      <tr class="daily">
+        <td>
+          <div class="weekday3">Monday</div>
+        </td>
+        <td>
+          <img class="weather-icon3" src="assets/mist.png" />
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">HIGH</div>
+            <div class="max3">30&deg;C</div>
+          </div>
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">LOW</div>
+            <div class="min3">20&deg;C</div>
+          </div>
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">HUMIDITY</div>
+            <div class="humid3">50%</div>
+          </div>
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">RAIN CHANCE</div>
+            <div class="rain3">20%</div>
+          </div>
+        </td>
+      </tr>
+      <tr class="daily">
+        <td>
+          <div class="weekday4">Monday</div>
+        </td>
+        <td>
+          <img class="weather-icon4" src="assets/mist.png" />
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">HIGH</div>
+            <div class="max4">30&deg;C</div>
+          </div>
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">LOW</div>
+            <div class="min4">20&deg;C</div>
+          </div>
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">HUMIDITY</div>
+            <div class="humid4">50%</div>
+          </div>
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">RAIN CHANCE</div>
+            <div class="rain4">20%</div>
+          </div>
+        </td>
+      </tr>
+      <tr class="daily">
+        <td>
+          <div class="weekday5">Monday</div>
+        </td>
+        <td>
+          <img class="weather-icon5" src="assets/mist.png" />
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">HIGH</div>
+            <div class="max5">30&deg;C</div>
+          </div>
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">LOW</div>
+            <div class="min5">20&deg;C</div>
+          </div>
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">HUMIDITY</div>
+            <div class="humid5">50%</div>
+          </div>
+        </td>
+        <td>
+          <div class="info">
+            <div class="tag">RAIN CHANCE</div>
+            <div class="rain5">20%</div>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div hidden id="spinner"></div>
+    <img class="imagine" id="imagine" src="" />
+
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/photo.js"></script>
+    <script src="scripts/favorites.js"></script>
+  </body>
+</html>
